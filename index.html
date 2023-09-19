@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Navbar Section-->
+    <header class="w-full shadow-lg bg-white fixed top-0 ">
+        <div class="container mx-auto py-5 flex justify-between items-center">
+            <div class="w-[186px]">
+                <img src="./public/assets/Logo.png" alt="website logo" />
+            </div>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex gap-10 items-start">
+                <a class="hover:text-primary" href="#hero">Home</a>
+                <a class="hover:text-primary" href="#portfolio">Portfolio</a>
+                <a class="hover:text-primary" href="#about">About Me</a>
+                <a class="hover:text-primary" href="#testimonial">Testimonials</a>
+            </nav>
+            <!-- Contact Button -->
+            <div class="hidden md:block">
+                <a class="button hover:button-bg transition-all" href="#contact">Contact Me</a>
+            </div>
+            <!-- mobile menu -->
+            <div class="md:hidden">
+                <div class="space-y-1 rotate-180" id="hamburger">
+                    <div class="w-6 h-0.5 transition-all bg-black"></div>
+                    <div class="w-6 h-0.5 transition-all bg-black"></div>
+                    <div class="w-6 h-0.5 transition-all bg-black"></div>
+                </div>
+                <nav class="-translate-x-full transition-all bg-shade absolute left-0 top-0 h-screen w-1/2 text-secondary font-semibold text-base z-40"
+                    id="mobile-menu">
+                    <div class="flex flex-col items-start gap-5 p-9">
+                        <div class="w-28">
+                            <img src="./public/assets/Logo.png" class="w-full" alt="website logo" />
+                        </div>
+                        <div class="flex flex-col gap-8 mt-10" id="mobile-nav">
+                            <a class="hover:text-primary" href="#hero">Home</a>
+                            <a class="hover:text-primary" href="#portfolio">Portfolio</a>
+                            <a class="hover:text-primary" href="#about">About Me</a>
+                            <a class="hover:text-primary" href="#testimonial">Testimonials</a>
+                        </div>
+                        <div>
+                            <button>Contact Me</button>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section-->
+    <section class="bg-shade py-36 px-10 md:px-20 flex flex-col md:flex-row items-center gap-20" id="hero">
+        <!-- Hero text -->
+        <div>
+            <h1 class="text-headings text-base sm:text-sm font-semibold">Hey, I am Jhon</h1>
+            <p class="text-headings text-xl sm:text-big font-bold">I create <span class="text-primary">product
+                    design</span> and brand experience</p>
+            <p class="text-sm sm:text-md font-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Suspendisse varius enim in eros elementum
+                tristique.</p>
+
+            <div class="mt-8">
+                <button class="button-bg transition-colors hover:button">Get in Touch</button>
+            </div>
+        </div>
+        <div>
+            <img class="w-full object-cover" src="./public/assets/hero-image.png" />
+        </div>
+    </section>
+    <!-- Skills Section-->
+    <section class="py-36 px-10 flex flex-col gap-[107px] md:px-20" id="skills">
+        <!-- Meta Tile and description -->
+        <div class="flex flex-col gap-[21px]">
+            <p class="text-base sm:text-sm font-semibold text-headings">My Skills</p>
+            <h2 class="text-lg sm:text-xl text-headings font-bold">My Experties</h2>
+        </div>
+        <div class="flex flex-col md:flex-row gap-[43px] text-headings">
+            <div
+                class="flex flex-col items-start bg-shade p-8 rounded-[11px] hover:border-b-primary hover:border-solid hover:border-b-4">
+                <img class="bg-white p-13 mb-8 rounded-[11px] shadow-md" src="./public/assets/product-chain-1.png" />
+                <h3 class="text-lg font-bold mb-5">Strategy & Direction</h3>
+                <p class="text-sm font-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros elementum
+                    tristique.</p>
+            </div>
+            <div
+                class="flex flex-col items-start bg-shade p-8 rounded-[11px] hover:border-b-primary hover:border-solid hover:border-b-4">
+                <img class="bg-white p-13 mb-8 rounded-[11px] shadow-md" src="./public/assets/tag 1.png" />
+                <h3 class="text-lg font-bold mb-5">Branding & Logo</h3>
+                <p class="text-sm font-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros elementum
+                    tristique.</p>
+            </div>
+            <div
+                class="flex flex-col items-start bg-shade p-8 rounded-[11px] hover:border-b-primary hover:border-solid hover:border-b-4">
+                <img class="bg-white p-13 mb-8 rounded-[11px] shadow-md" src="./public/assets/feather-pen-1.png" />
+                <h3 class="text-lg font-bold mb-5">UI & UX Design</h3>
+                <p class="text-sm font-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros elementum
+                    tristique.</p>
+            </div>
+            <div
+                class="flex flex-col items-start bg-shade p-8 rounded-[11px] hover:border-b-primary hover:border-solid hover:border-b-4">
+                <img class="bg-white p-13 mb-8 rounded-[11px] shadow-md" src="./public/assets/feather-pen-2.png" />
+                <h3 class="text-lg font-bold mb-5">Webflow Development</h3>
+                <p class="text-sm font-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros elementum
+                    tristique.</p>
+            </div>
+        </div>
+    </section>
+    <!-- About Me Section -->
+    <section class="py-36 px-10 flex flex-col gap-28 justify-evenly items-center md:px-20 md:flex-row" id="about">
+        <div class="flex-1">
+            <img src="./public/assets/about-me.png" />
+        </div>
+        <div class="flex-1">
+            <!-- Meta Tile and description -->
+            <div class="flex flex-col gap-[21px]">
+                <p class="text-base sm:text-sm font-semibold text-headings">About</p>
+                <h2 class="text-lg sm:text-xl text-headings font-bold">About Me</h2>
+            </div>
+            <p class="mt-8 text-secondary text-md font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fusce varius faucibus massa sollicitudin amet
+                augue.
+                Nibh metus a semper purus mauris duis. Lorem eu neque, tristique quis duis.
+                Nibh scelerisque ac adipiscing velit non nulla in amet pellentesque.<br /><br />
+                Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae.
+                Amet pellentesque sit pulvinar lorem mi a, euismod risus r.</p>
+        </div>
+    </section>
+    <!-- Portfolio Section-->
+    <section class="py-36 px-10 flex flex-col gap-[107px] z-1 md:px-20" id="portfolio">
+        <!-- Meta Tile and description -->
+        <div class="flex flex-col gap-[21px]">
+            <p class="text-base sm:text-sm font-semibold text-headings">Recent Project</p>
+            <h2 class="text-lg sm:text-xl text-headings font-bold">My Portfolio</h2>
+        </div>
+        <div class="flex flex-col md:flex-row gap-[43px] text-headings">
+            <!-- Skills -->
+            <div class="bg-white shadow-md">
+                <img class="object-cover" src="./public/assets/Image.png" />
+                <div class="p-8">
+                    <h3 class="text-lg font-bold">Strategy & Direction</h3>
+                    <p class="text-secondary text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum
+                        tristique.</p>
+
+                    <div class="mt-8 w-full">
+                        <a class="text-black text-[19px] flex flex-row gap-4 justify-start items-center " href="#">View
+                            in Dribble <span><img class="w-4" src="./public/assets/arrow.png" /></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skills -->
+            <div class="bg-white shadow-md">
+                <img class="object-cover" src="./public/assets/Image-1.png" />
+                <div class="p-8">
+                    <h3 class="text-lg font-bold">Strategy & Direction</h3>
+                    <p class="text-secondary text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum
+                        tristique.</p>
+
+                    <div class="mt-8 w-full">
+                        <a class="text-black text-[19px] flex flex-row gap-4 justify-start items-center " href="#">View
+                            in Dribble <span><img class="w-4" src="./public/assets/arrow.png" /></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skills -->
+            <div class="bg-white shadow-md">
+                <img class="object-cover" src="./public/assets/Image-2.png" />
+                <div class="p-8">
+                    <h3 class="text-lg font-bold">Strategy & Direction</h3>
+                    <p class="text-secondary text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum
+                        tristique.</p>
+
+                    <div class="mt-8 w-full">
+                        <a class="text-black text-[19px] flex flex-row gap-4 justify-start items-center " href="#">View
+                            in Dribble <span><img class="w-4" src="./public/assets/arrow.png" /></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Testimonial Section -->
+    <section class="py-36 px-10 flex flex-col gap-[107px] bg-shade md:px-20" id="testimonial">
+        <!-- Meta Tile and description -->
+        <div class="flex flex-col gap-[21px]">
+            <p class="text-base sm:text-sm font-semibold text-headings">Clients Feedback</p>
+            <h2 class="text-lg sm:text-xl text-headings font-bold">Customer testimonials</h2>
+        </div>
+        <div class="flex flex-col gap-[43px] md:flex-row">
+            <!-- Testimonial cards -->
+            <div class="rounded-lg border border-[#006B6A] p-10 flex flex-col justify-start gap-[43px]">
+                <!-- Stars -->
+                <div class="flex flex-row gap-1">
+                    <span><img src="./public/assets/star.png" /></span>
+                    <span><img src="./public/assets/star.png" /></span>
+                    <span><img src="./public/assets/star.png" /></span>
+                    <span><img src="./public/assets/star.png" /></span>
+                    <span><img src="./public/assets/star.png" /></span>
+                </div>
+                <p class="text-secondary text-sm font-normal">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros elementum tristique.
+                    Duis cursus, mi quis viverra ornare."
+                </p>
+                <div class="flex flex-row justify-start items-center gap-[21px]">
+                    <div class="w-[74px] h-[74px]">
+                        <img class="w-full" src="./public/assets/avatar-image-1.png" />
+                    </div>
+                    <div>
+                        <h4 class="text-headings text-sm font-semibold">Dianne Russell</h4>
+                        <p class="text-sm text-secondary font-normal">Starbucks</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial cards -->
+            <div class="rounded-lg border border-[#006B6A] p-10 flex flex-col justify-start gap-[43px]">
+                <!-- Stars -->
+                <div class="flex flex-row gap-1">
+                    <span><img src="./public/assets/star.png" /></span>
+                    <span><img src="./public/assets/star.png" /></span>
+                    <span><img src="./public/assets/star.png" /></span>
+                    <span><img src="./public/assets/star.png" /></span>
+                    <span><img src="./public/assets/star.png" /></span>
+                </div>
+                <p class="text-secondary text-sm font-normal">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros elementum tristique.
+                    Duis cursus, mi quis viverra ornare."
+                </p>
+                <div class="flex flex-row justify-start items-center gap-[21px]">
+                    <div class="w-[74px] h-[74px]">
+                        <img class="w-full" src="./public/assets/avatar-image-2.png" />
+                    </div>
+                    <div>
+                        <h4 class="text-headings text-sm font-semibold">Kristin Watson</h4>
+                        <p class="text-sm text-secondary font-normal">Louis Vuitton</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial cards -->
+            <div class="rounded-lg border border-[#006B6A] p-10 flex flex-col justify-start gap-[43px]">
+                <!-- Stars -->
+                <div class="flex flex-row gap-1">
+                    <span><img src="./public/assets/star.png" /></span>
+                    <span><img src="./public/assets/star.png" /></span>
+                    <span><img src="./public/assets/star.png" /></span>
+                    <span><img src="./public/assets/star.png" /></span>
+                    <span><img src="./public/assets/star.png" /></span>
+                </div>
+                <p class="text-secondary text-sm font-normal">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros elementum tristique.
+                    Duis cursus, mi quis viverra ornare."
+                </p>
+                <div class="flex flex-row justify-start items-center gap-[21px]">
+                    <div class="w-[74px] h-[74px]">
+                        <img class="w-full" src="./public/assets/avatar-image-3.png" />
+                    </div>
+                    <div>
+                        <h4 class="text-headings text-sm font-semibold">Kathryn Murphy</h4>
+                        <p class="text-sm text-secondary font-normal">McDonald's</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section-->
+    <section class="py-36 px-10 flex flex-col gap-[107px] md:container md:w-1/2 md:mx-auto  md:px-20" id="contact">
+        <!-- Meta Tile and description -->
+        <div class="flex flex-col gap-[21px] text-center">
+            <p class="text-base sm:text-sm font-semibold text-headings">Get In Touch</p>
+            <h2 class="text-lg sm:text-xl text-headings font-bold">Contact us</h2>
+            <h3 class="text-secondary text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        </div>
+        <!-- Form starts -->
+        <form class="flex flex-col gap-5 md:gap-8">
+            <div class="flex flex-col md:flex-row justify-center gap-5 md:gap-8">
+                <div class="flex flex-col items-start w-full">
+                    <label class="text-sm text-headings font-normal">First name</label>
+                    <input type="text" name="first-name" id="first-name" class="rounded-lg w-full border-primary focus:ring-primary focus:border-primary">
+                </div>
+                <div class="flex flex-col items-start w-full">
+                    <label class="text-sm text-headings font-normal">Last name</label>
+                    <input type="text" name="last-name" id="last-name" class="rounded-lg w-full border-primary focus:ring-primary focus:border-primary">
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center gap-5 md:gap-8">
+                <div class="flex flex-col items-start w-full">
+                    <label class="text-sm text-headings font-normal">Email</label>
+                    <input type="email" name="first-name" id="email" class="rounded-lg w-full border-primary focus:ring-primary focus:border-primary">
+                </div>
+                <div class="flex flex-col items-start w-full">
+                    <label class="text-sm text-headings font-normal">Phone number</label>
+                    <input type="text" name="phone-number" id="phone-number" class="rounded-lg w-full border-primary focus:ring-primary focus:border-primary">
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start w-full ">
+                <label class="text-sm text-headings font-normal">Choose topic</label>
+                <select class="rounded-lg w-full border-primary focus:ring-primary focus:border-primary">
+                    <option selected class="text-secondary">Select one...</option>
+                    <option value="web">Web Development</option>
+                    <option value="devops">Devops</option>
+                    <option value="UI/UX">UI/UX</option>
+                    <option value="Node Js">Node JS</option>
+                </select>
+            </div>
+                <div class="flex flex-col items-start w-full">
+                    <label class="text-sm text-headings font-normal">Message</label>
+                    <textarea rows="5" class="w-full rounded-lg border-primary focus:ring-primary focus:border-primary" placeholder="Type your message..."></textarea>
+                </div>
+            <div class="flex flex-row gap-2 items-center">
+                <input type="checkbox" class="rounded-sm border-secondary">
+                <label class="text-sm text-headings font-normal">I accept the terms</label>
+            </div>
+            <div class="flex justify-center">
+                <button class="button-bg">Submit</button>
+            </div>
+
+        </form>
+        <!-- Form ends -->
+    </section>
+    <!-- Footer Section -->
+    <footer class="py-24 px-10 flex flex-col gap-[100px] md:gap-[107px] bg-shade  md:px-20">
+        <!-- Top section -->
+        <div class="flex flex-col gap-10 md:flex-row md:justify-between md:items-center">
+            <!-- Footer logo -->
+            <div>
+                <img src="./public/assets/Logo.png" />
+            </div>
+            <!-- Footer navigation -->
+                <nav class="flex flex-row flex-wrap gap-11 text-black text-sm font-normal">
+                    <a href="#">Home</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">About Me</a>
+                    <a href="#">Testimonials</a>
+                </nav>
+
+            <!-- Social networks -->
+            <div class="flex flex-row items-start gap-4">
+                <span class="w-8 h-8"><img src="./public/assets/Facebook.png" /></span>
+                <span class="w-8 h-8"><img src="./public/assets/Instagram.png" /></span>
+                <span class="w-8 h-8"><img src="./public/assets/Twitter.png" /></span>
+                <span class="w-8 h-8"><img src="./public/assets/LinkedIn.png" /></span>
+            </div>
+        </div>
+        <!-- Bottom section -->
+        <hr class=""/>
+        <div class="flex  gap-10 flex-col-reverse items-center md:flex-row md:justify-between flex-wrap">
+            <p class="text-black text-[19px]">Made with 💖 by Airdokan</p>
+            <nav class="text-black text-[19px] flex flex-row flex-wrap gap-4 md:gap-11">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies Settings</a>
+            </nav>
+        </div>
+
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>

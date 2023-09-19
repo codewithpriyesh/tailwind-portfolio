@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply font-roboto;
+    }
+}
+
+@layer components{
+    .button{
+       border-radius: 5.33px;
+       border: 1.33px solid #5E3BEE;
+       @apply text-primary text-sm flex justify-center bg-white;
+       padding: 18.667px 42.667px;
+
+    }
+
+    .button-bg{
+        border-radius: 5.33px;
+        background-color: #5E3BEE;
+        border: 1.33px solid #5E3BEE;
+        @apply text-sm flex justify-center text-white;
+        padding: 18.667px 42.667px;
+    }
+}
+/* 
+@layer utilities{
+    .rotate-x-45{
+        @apply translate-x-[3px] translate-y-[4px] rotate-45;
+    }
+    .-rotate-x-45{
+        @apply translate-x-[3px] -translate-y-[8px] -rotate-45;
+    }
+} */
+
+.rotate-x-45{
+    @apply translate-x-[3px] translate-y-[4px] rotate-45;
+}
+.-rotate-x-45{
+    @apply translate-x-[3px] -translate-y-[8px] -rotate-45;
+}
+
+.hide-elem{
+    @apply opacity-0;
+}
